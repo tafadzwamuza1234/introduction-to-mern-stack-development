@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>css selector types demo</title>
+        <style>
+            /*simple selectors*/
+            h1{color: blue;}/*element selector*/
+            #main-title{text-decoration: underline;}/*id selector*/
+            ::highlight{background-color: yellow;}/*class selector*/
+            h2,p,li{font-family: Arial, Helvetica, sans-serif;}/*grup selector*/
+            *{margin: 5px;}/*universal selector*/
+
+            /*combinator selector*/
+            div p {color: green;}/*descendant selector*/
+            ul>li{font-weight: bold;}/*child selector*/
+            h3 + p {color: red;}/*adjacent sibling*/
+            h3~p {font-style: italic;}/*general sibling*/
+
+            /*pseudo-class selectors*/
+            a:hover{color: orange;}/*hover effect*/
+            li:first-child{color: purple;}/*1st child*/
+            li:nth-child(2){color:teal}/*specific child*/
+
+            /*pseudo-elements*/
+            p::first-line{font-weight: bold;}
+            p::before{content: "";color: gray;}
+            p::after{content: "";color: green;}
+
+            /*attribute selectors*/
+            input[type="text"]{border:2px solid blue;}
+            a[href^="https"]{font-style: italic;}
+            input[::placeholder*="name"]{background: color #f0ff8f;}
+        </style>
+        </head>
+        <body>
+            <!--simple selectors-->
+            <h1 id="main-title">css selector examples</h1>
+            <h2 class="highlight">highlighted heading</h2>
+
+            <!--combinator selectors-->
+            <div>
+                <p>this parragraph is a descendant of a div</p>
+            </div>
+            <ul>
+                <li>first item</li>
+                <li>second item</li>
+                <li>third item</li>
+            </ul>
+
+            <h3>heading for siblings</h3>
+            <p>tis paragraph is adjacent to sibling of h3</p>
+            <p>tis paragraph is general sbling of h3</p>
+
+            <!--pseudo-class-->
+            <a href="https://www.examples.com">visit example</a>
+
+            <!--pseudo-element-->
+            <p>this paragraph demonstrates pseudo-elements</p>
+
+            <!--attribute selectors-->
+            <form>
+                <input type="text"placeholder="enter your name">
+                <input type="Email"placeholder="enter your email">
+            </form>
+        </body>
+</html>
+
+

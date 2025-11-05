@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js example</title>
+</head>
+<body>
+    <h2 id="greeting">Hello!</h2>
+    <button onclick="changeText()">Click Me</button>
+    <button onclick="changeColor()">Click to changecolor</button>
+
+    <script>
+         function changeText()
+         {
+            document.getElementById("greeting").innerHTML="You clicked the button!";
+         }
+         function changeColor(){
+            document.getElementById("greeting").style.color="red";
+         }
+    </script>
+</body>
+</html>

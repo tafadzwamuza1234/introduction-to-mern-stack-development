@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:inline-flex;
+            flex: 1 1 300px;
+            border-radius:10px;
+            border:1px solid #ccc;
+            overflow:hidden;
+        }
+        .icon{
+            padding:0.8rem
+        }
+        .searchox{
+            border:0;
+            flex:1;
+        }
+        .searchbutton{
+            color:white;
+            background-color:blue;
+            border:0;
+            padding:0.8rem;
+            border-radius:8px;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <img src="search.svg"  class="icon" alt="sample image"style="width:32px; height=24px">
+    <input type="search" name="search" placeholder="enter text here.."  class="searchbox">
+    <input type="submit" value="search" class="searhbutton">
+    </div>
+</body>
+</html>

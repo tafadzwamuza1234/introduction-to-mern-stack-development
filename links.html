@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    @media (max-width:600px){
+      body{  background-color:pink;
+    }
+}
+    @media (min-width:599px){
+      body{  background-color:yellow;
+    }
+}
+    button{
+        background-color:green;
+    }
+    button:hover{
+        background-color:yellow;
+    }
+    #cont{
+        display:flex;
+        flex-wrap:wrap;
+        
+    }
+    #cont >div{
+        paddind:20px;
+        margin: 20px;
+        border:solid black 4px;
+        background-color: yellow;
+    }
+    table, th, td{
+        border:solid black 3px;
+        border-collapse:collapse;
+        padding:20px;
+    }
+    th {
+        margin: 20px;
+    }
+    h1{
+        text-align:center;
+        background:blue;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h1> WELCOME TO MY WEBPAGE</h1>
+        </div>
+    <div>
+    <button>click me</button>
+    </div>
+    <div>
+        <a href="AUS.jpg">click here</a>
+    </div> 
+    <section>
+        <a href="tafa.html"><img src=" AUS.jpg" width =100 height=100> </img> </a>
+    </section> 
+    <div id="cont">
+        <div>item 1</div>
+        <div>item 2</div>
+          <div>item 1</div>
+        <div>item 2</div>
+          <div>item 1</div>
+        <div>item 2</div>
+          <div>item 1</div>
+        <div>item 2</div>
+          <div>item 1</div>
+        <div>item 2</div>
+          <div>item 1</div>
+        <div>item 2</div>
+          <div>item 1</div>
+        <div>item 2</div>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                <th> serial</th>
+                <th> name</th>
+                <th> rolno</th>
+                <th> section</th>
+                <th>branch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>tafadzwa</td>
+                    <td> 24B11CS475</td>
+                    <td> section 5</td>
+                    <td> cse</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Brenda</td>
+                    <td> 24B11CS466</td>
+                    <td> section 3</td>
+                    <td> EEE</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td> Mishell</td>
+                    <td> 24B11CS488</td>
+                    <td> section 7</td>
+                    <td> AI</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <form>
+            <input name="name" type="text" placeholder="FULL NAME">
+            <input name="password" type="password" placeholder="password">
+            <input type="submit">
+        </form>
+    </div>
+    <div>
+        <form>
+        favourite color
+        <input name ="color" type="radio" value="red">Red
+        <input name ="color" type="radio" value="orange">orange
+        <input name="color"    type="radio" value="green">Green
+          </form>
+    
+    </div>
+</body>
+</html>

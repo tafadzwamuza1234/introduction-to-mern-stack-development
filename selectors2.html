@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors example</title>
+    
+    <style>
+        
+        #main{
+            text-align:center;
+        }
+        .sub{
+            text-align:center;
+            background-color:green;
+        }
+        .box{
+            color:crimson;
+        }
+        h3 + p{
+            color:green;
+        }
+        h3~p{
+            color:aqua;
+        }
+        a:hover{
+            color:crimson;
+        }
+        p::first-letter{
+            color:brown;
+    
+        }
+        ul>li{
+            background-color:blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 id="main"> Main title</h1>
+    <h2 class="sub">sub Title</h2>
+
+    <p> This is normal paragraph</p>
+
+    <div class="box">
+        <P>This class is inside a div class</P>
+        <p> This is another paragaraph inside box</p>
+    </div>
+
+    <ul>
+        <li> first element</li>
+        <li>second element</li>
+    </ul>
+
+    <h3>sibling test</h3>
+    <P>paragraph enxt to h3(adjacant sibling).</P>
+    <p>Another paragraph (general sibling).</p>
+
+    <input type="text" placeholder="type here...">
+    <input type="submit">
+
+    <p> hover over this <a href ="#">link </a></p>
+</body>
+</html>
